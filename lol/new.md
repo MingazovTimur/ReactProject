@@ -1,4 +1,3 @@
-﻿
 
-omaewamooshineruu
+var b = "ya spravilsya?"
 
