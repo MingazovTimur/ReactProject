@@ -1,3 +1,0 @@
-
-var b = "ya spravilsya?"
-
