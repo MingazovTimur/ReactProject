@@ -8,22 +8,16 @@ public class Main {
 
 
         Turtle tortila          = new Turtle("Tortilla","green", 10 );
-        aquarium.setInside(new Animal[] {tortila});
 
         PredatorFish smallShark = new PredatorFish("smallShark", "grey", 7);
-        aquarium.setInside(new Animal[] {smallShark});
 
         PredatorFish piranha    = new PredatorFish("piranha", "grey", 4);
-        aquarium.setInside(new Animal[] {piranha});
 
         PredatorFish tigerFish  = new PredatorFish("tigerFish", "yellow", 6);
-        aquarium.setInside(new Animal[] {tigerFish});
 
         PeacefullFish guppi     = new PeacefullFish("guppi", "darkBlue", 1);
-        aquarium.setInside(new Animal[] {guppi});
 
         PeacefullFish catFish   = new PeacefullFish("catFish", "black", 3);
-        aquarium.setInside(new Animal[] {catFish});
 
 
 
