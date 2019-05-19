@@ -12,8 +12,8 @@ public class VendingMachine {
 
     private Drinks[] insideVM = new Drinks[6];
 
-    public Drinks[] getInsideVM() {
-        return insideVM;
+    public Drinks getInsideVM(int a) {
+        return insideVM[a];
     }
 
     public void setInsideVM(Drinks[] insideVM) {
