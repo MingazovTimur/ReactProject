@@ -1,11 +1,12 @@
 import React from 'react';
-
+import style from './styleLibs/Nav.module.css';
 
 
 
 const Nav = () => {
     return (
-        <div className='Nav'>
+        <div className={style.nav}>
+            Навигация:
             <div>
                 Profile
             </div>

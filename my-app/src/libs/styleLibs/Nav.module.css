@@ -1,0 +1,12 @@
+.nav{   
+    grid-area: n;
+    background-color: orange;
+    border: steelblue 2px solid;
+
+}
+
+.nav div {
+    margin: 0 auto;
+    margin-top: 10px;
+
+}

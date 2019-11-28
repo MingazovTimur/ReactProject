@@ -6,12 +6,12 @@ import Nav from './libs/Nav';
 
 const App = () => {
   return (
-    <div className='App'>
+    <div className='app-wrapper'>
 
       <Header />
       <Nav />
       <Content />
-      
+
     </div>
   );
 }
