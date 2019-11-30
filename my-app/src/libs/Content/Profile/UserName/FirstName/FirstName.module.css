@@ -1,0 +1,13 @@
+.firstName{
+    grid-area: first;
+    justify-self: end;
+    width: 30px;
+}
+
+.firstName:after{
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

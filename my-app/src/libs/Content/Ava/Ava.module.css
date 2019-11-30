@@ -1,0 +1,20 @@
+
+.ava {
+    grid-area: ava;
+    float: left;
+    padding: 10px;
+    justify-self: end;
+    align-self: flex-start;
+}
+.ava img {
+    width: 100%;
+
+}
+
+.ava:after{
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

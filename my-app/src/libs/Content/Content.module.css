@@ -1,0 +1,20 @@
+.content{
+    grid-area: c;
+    background-color: grey;
+    border: springgreen 2px solid;
+
+    display: grid;
+
+    grid-template-areas: 
+    "ava profile"
+    "fl posts"
+    ;
+
+    grid-template-columns:3fr 7fr;
+    grid-template-rows: 265px 800px;
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+  

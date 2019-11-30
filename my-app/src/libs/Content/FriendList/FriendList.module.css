@@ -1,0 +1,18 @@
+.friendList{
+    grid-area: fl;
+    align-self: start;
+}
+
+.friendList div{
+    margin-top: 15px;
+    width: 25%;
+    height: auto;
+    font-size: 8px;
+}
+
+.friendList img{
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
