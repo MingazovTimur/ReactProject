@@ -3,11 +3,13 @@ import React from 'react';
 import style from './PostAdding.module.css';
 
 
-const PostAdding = () => {
+const PostAdding = (props) => {
     return (
         <div className={style.postAdding}>
             <Ava />
-            <textarea name='area'>Здесь можно создать свой пост</textarea>
+            <textarea name='area'>
+               {props.value}
+            </textarea>
             <button>Done</button>
         </div>
     );

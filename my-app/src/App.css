@@ -19,3 +19,7 @@
 .app-wrapper div{
   border-radius: 5px;
 }
+
+.content-wrapper{
+  grid-area: c;
+}

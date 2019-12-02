@@ -3,3 +3,8 @@
     height: 50px;
     border-radius: 30px;
 }
+
+.post {
+    width: 100%;
+    min-height: 100px;
+}

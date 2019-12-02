@@ -22,11 +22,14 @@
 
 .postAdding textarea{
     grid-area: area;
+    max-width: 500px;
+    max-height: 100px;
    
 }
 
 .postAdding button{
     grid-area: btn;
+    margin-right: 27px;
     justify-self: end;
     border-radius: 20px;
     font-size: 20px;

@@ -1,18 +1,25 @@
 import React from 'react';
 import './App.css';
 import Header from './libs/Header/Header';
-import Content from './libs/Content/Content';
+import ProfilePage from './libs/Content/ProfilePage/ProfilePage';
 import Nav from './libs/Nav/Nav';
+import Messages from './libs/Content/Messages/Messages';
+import {BrowserRouter, Route} from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className='app-wrapper'>
+    <BrowserRouter>
+      <div className='app-wrapper'>
 
-      <Header />
-      <Nav />
-      <Content />
+        <Header />
+        <Nav />
+        <div className='content-wrapper'>
+          <Route path='/profile'  component={ProfilePage} />
+          <Route path='/messages' component={Messages} />
+        </div>
 
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -8,10 +8,10 @@ const Nav = () => {
         <div className={style.nav}>
             Навигация:
             <div>
-                Profile
+                <a href="/profile">Profile</a>
             </div>
             <div>
-                Messages
+                <a href="/messages">Messages</a>
             </div>
             <div>
                 News 
