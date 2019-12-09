@@ -1,4 +1,4 @@
-import Ava from '../../Ava/Ava.js';
+import UserIcon from '../../UserIcon/UserIcon.js';
 import React from 'react';
 import style from './PostAdding.module.css';
 
@@ -6,7 +6,7 @@ import style from './PostAdding.module.css';
 const PostAdding = (props) => {
     return (
         <div className={style.postAdding}>
-            <Ava />
+            <UserIcon />
             <textarea name='area'>
                {props.value}
             </textarea>

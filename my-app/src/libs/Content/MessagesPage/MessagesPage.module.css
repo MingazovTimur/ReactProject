@@ -1,0 +1,17 @@
+.messagesPage{
+
+    display: grid;
+
+    grid-template-columns: 2fr 9fr;
+    grid-template-rows: 50px auto;
+    grid-template-rows: 100%;
+    column-gap: 20px;
+
+    
+    background-color: #dbdbdb;
+    min-height: 800px;
+}
+
+.messagesPage .label {
+    justify-content: center;
+}

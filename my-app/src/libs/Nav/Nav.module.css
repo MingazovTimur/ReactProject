@@ -1,12 +1,27 @@
 .nav{   
     grid-area: n;
     background-color: orange;
-    border: steelblue 2px solid;
+    padding: 20px;
+    
 
 }
 
-.nav div {
-    margin: 0 auto;
-    margin-top: 10px;
+.item{
+    margin-top: 15px;
+}
 
+.item a{
+    font-size: 26px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.item :hover{
+    color: black;
+    transition: all 0.2s ease;
+}
+
+.item .activeLink{
+    color: black;
 }

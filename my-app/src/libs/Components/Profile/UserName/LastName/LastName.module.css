@@ -1,3 +1,5 @@
-.lastName{
-    grid-area: last;
+
+.lastName p{
+    margin: 0;
+    padding: 0;
 }

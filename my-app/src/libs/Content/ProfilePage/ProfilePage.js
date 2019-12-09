@@ -7,11 +7,13 @@ import FriendList from '../../Components/FriendList/FriendList';
 
 
 
-const ProfilePage = () => {
+const ProfilePage = (props) => {
+
+
     return (
         <div className={style.profilePage}>
             <Ava /> <Profile />
-            <FriendList /> <Posts />
+            <FriendList /> <Posts postsData={props.postsData}/>
         </div>
     );
 }

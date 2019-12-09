@@ -3,10 +3,14 @@ import './App.css';
 import Header from './libs/Header/Header';
 import ProfilePage from './libs/Content/ProfilePage/ProfilePage';
 import Nav from './libs/Nav/Nav';
-import Messages from './libs/Content/Messages/Messages';
+import MessagesPage from './libs/Content/MessagesPage/MessagesPage';
 import {BrowserRouter, Route} from 'react-router-dom';
+import NewsPage from './libs/Content/NewsPage/NewsPage';
+import MusicPage from './libs/Content/MusicPage/MusicPage';
+import SettingPage from './libs/Content/SettingPage/SettingPage';
 
-const App = () => {
+const App = (props) => {
+
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
@@ -14,8 +18,16 @@ const App = () => {
         <Header />
         <Nav />
         <div className='content-wrapper'>
-          <Route path='/profile'  component={ProfilePage} />
-          <Route path='/messages' component={Messages} />
+          <Route path='/profile'  render={ () => <ProfilePage   
+          postsData={props.state.postsData}/>} />
+          
+          <Route path='/messages' render={ () => <MessagesPage  
+          messagesData={props.state.messagesData} 
+          dialogsData={props.state.dialogsData}/>} />
+
+          <Route path='/news'     render={ () => <NewsPage />} />
+          <Route path='/music'    render={ () => <MusicPage />} />
+          <Route path='/settings' render={ () => <SettingPage />} />
         </div>
 
       </div>

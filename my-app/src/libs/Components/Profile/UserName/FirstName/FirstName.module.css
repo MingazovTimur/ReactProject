@@ -1,13 +1,12 @@
 .firstName{
     grid-area: first;
-    justify-self: end;
+    justify-self: center;
     width: 30px;
+    grid-area: firstName;
 }
 
-.firstName:after{
-    content: '.';
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+.firstName p{
+    text-align: center;
+    margin: 0 auto;
+    justify-self: center;
 }

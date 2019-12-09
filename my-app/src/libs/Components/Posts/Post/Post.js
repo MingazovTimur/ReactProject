@@ -1,18 +1,18 @@
 
-import Ava from '../../Ava/Ava.js';
 import React from 'react';
 import style from './Post.module.css';
+import UserIcon from '../../UserIcon/UserIcon.js';
 
 
 
 const Post = (props) => {
     return (
         <div className={style.post}>
-            <Ava />
-            <p>
-            {props.message}
+            <UserIcon />
+            <p className={style.postText}>
+            {props.fill}
             </p>
-            <span>
+            <span className={style.likes}>
             {props.likes + " likes"}
             </span>
         </div>

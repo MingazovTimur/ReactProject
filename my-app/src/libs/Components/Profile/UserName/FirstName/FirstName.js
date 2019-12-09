@@ -6,7 +6,7 @@ import style from './FirstName.module.css';
 const FirstName = () => {
     return (
         <div className={style.firstName}>
-            Юзер
+            <p>Андрей</p>
         </div>
     );
 }
