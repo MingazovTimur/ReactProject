@@ -3,15 +3,15 @@ import style from './FriendList.module.css';
 import UserIcon from '../UserIcon/UserIcon';
 
 
-const Posts = () => {
+const Posts = (props) => {
     return (
         <div className={style.friendList}>
-            <UserIcon /> 
-            <UserIcon />
-            <UserIcon />
-            <UserIcon />
-            <UserIcon />
-            <UserIcon />
+            <UserIcon userIconSrc={props.userIconSrc} /> 
+            <UserIcon userIconSrc={props.userIconSrc} />
+            <UserIcon userIconSrc={props.userIconSrc} />
+            <UserIcon userIconSrc={props.userIconSrc} />
+            <UserIcon userIconSrc={props.userIconSrc} />
+            <UserIcon userIconSrc={props.userIconSrc} />
         </div>
     );
 }

@@ -7,12 +7,15 @@ import PostAdding from './PostAdding/PostAdding.js';
 const Posts = (props) => {
 
     let postsElement = props.postsData.map( 
-        p => <Post fill={p.fill} likes={p.likes} />
-        )
+        p => <Post 
+        fill={p.fill}  
+        likes={p.likes} 
+        userIconSrc={props.userIconSrc}/>)
 
     return (
         <div className={style.posts}>
             <PostAdding 
+                userIconSrc={props.userIconSrc}
                 value='Здесь можно создать свой пост' />
             {postsElement}
         </div>

@@ -6,7 +6,7 @@ import style from './PostAdding.module.css';
 const PostAdding = (props) => {
     return (
         <div className={style.postAdding}>
-            <UserIcon />
+            <UserIcon userIconSrc={props.userIconSrc}/>
             <textarea name='area'>
                {props.value}
             </textarea>

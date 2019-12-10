@@ -4,10 +4,13 @@ import Dialog from './Dialog/Dialog';
 
 
 
-const Dialogs = (prop) => {
+const Dialogs = (props) => {
 
 
-    let dialogsElements = prop.dialogsData.map (d =>  <Dialog id={d.id} user={d.user} />)
+    let dialogsElements = props.dialogsData.map(d => <Dialog
+            id={d.id}
+            user={d.user}
+            userIconSrc={props.userIconSrc} />)
 
     return (
         

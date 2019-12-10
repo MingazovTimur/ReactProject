@@ -8,7 +8,7 @@ import UserIcon from '../../UserIcon/UserIcon.js';
 const Post = (props) => {
     return (
         <div className={style.post}>
-            <UserIcon />
+            <UserIcon userIconSrc={props.userIconSrc}/>
             <p className={style.postText}>
             {props.fill}
             </p>

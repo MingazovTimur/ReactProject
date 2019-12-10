@@ -12,8 +12,9 @@ const ProfilePage = (props) => {
 
     return (
         <div className={style.profilePage}>
-            <Ava /> <Profile />
-            <FriendList /> <Posts postsData={props.postsData}/>
+            <Ava avaSrc={props.avaSrc} /> <Profile />
+            <FriendList userIconSrc={props.userIconSrc} /> 
+            <Posts postsData={props.postsData} userIconSrc={props.userIconSrc}/>
         </div>
     );
 }

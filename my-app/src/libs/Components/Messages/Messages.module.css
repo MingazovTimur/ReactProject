@@ -1,8 +1,24 @@
 .messages{
     margin-bottom: 5%;
-    max-width: 60%;
+    max-width: 100%;
+
+    display: grid;
+    align-content: flex-end;
+    
+
+}
+
+.messages .mainLabel{
+    color: rgba(110, 110, 110, 0.7);
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin-left: 15px;
+}
+
+.messages .companionLabel{
+    color: rgba(110, 110, 110, 0.7);
     justify-self: flex-end;
-    align-self: end;
+    margin-right: 15px;
 }
 
 

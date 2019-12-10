@@ -1,11 +1,21 @@
 .message{
     color: black;
-    min-height: 30px;
-    background-color: rgba(138, 194, 150, .8);
     border-radius: 15px;
     padding: 15px;
     line-height: 30px;
-    margin: 20px;
-    max-width: 80%;
+    margin: 10px;
+    max-width: 60%;
 
+}
+
+.mainSender{
+    justify-self: start;
+    background-color: rgba(255, 255, 255, .8);
+
+}
+
+.otherSender{
+    justify-self: end;
+    background-color: rgba(138, 194, 150, .8);
+    
 }
