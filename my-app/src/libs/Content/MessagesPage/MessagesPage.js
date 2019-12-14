@@ -14,7 +14,9 @@ const MessagesPage = (props) => {
                 dialogsData={props.dialogsData} 
                 userIconSrc={props.userIconSrc} />
                 <Messages 
+                changeNewMessageData={props.changeNewMessageData}
                 messagesData={props.messagesData}
+                newMessageData={props.newMessageData}
                 sendMessage={props.sendMessage} />
             </div>
         </BrowserRouter>

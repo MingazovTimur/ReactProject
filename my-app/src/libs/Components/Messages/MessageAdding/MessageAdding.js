@@ -7,17 +7,21 @@ const MessageAdding = (props) => {
     let newMessageElement = React.createRef();
 
     let addMessage = () => {
+        props.sendMessage();
+    }
+
+    let onChangeMessage = () => {
         let text = newMessageElement.current.value;
-        props.sendMessage(text);
-        text = '';
-        
+        props.changeNewMessageData(text);
     }
 
     return (
         <div className={style.messageAdding}>
-            <textarea ref={newMessageElement}>
-               1
-            </textarea>
+            <textarea 
+            ref={newMessageElement} 
+            value={props.newMessageData}
+            onChange={onChangeMessage} />
+
             <button onClick={addMessage}>Send-></button>
         </div>
     );

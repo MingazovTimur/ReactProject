@@ -30,8 +30,10 @@ const App = (props) => {
           <Route path='/messages' render={() => <MessagesPage 
             sendMessage={props.sendMessage}
             userIconSrc={props.state.userIconSrc}
+            dialogsData={props.state.messagesPage.dialogsData}
             messagesData={props.state.messagesPage.messagesData}
-            dialogsData={props.state.messagesPage.dialogsData} />} />
+            newMessageData={props.state.messagesPage.newMessageData}
+            changeNewMessageData={props.changeNewMessageData} />} />
 
           <Route path='/news' render={() => <NewsPage />} />
           <Route path='/music' render={() => <MusicPage />} />

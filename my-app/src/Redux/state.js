@@ -35,12 +35,19 @@ let state = {
             {user:'Алексей Тимурович', id:'4'},
             {user:'Фродо Беггинс',  id:'5'},
             {user:'Бильбо Небеггинс',  id:'6'}
-        ]
+        ],
+
+        newMessageData: "Введите сообщение..."
     }
 };
 
 export let changeNewPostData = (text) => {
     state.profilePage.newPostData = text;
+    rerenderTree(state);
+}
+
+export let changeNewMessageData = (text) => {
+    state.messagesPage.newMessageData = text;
     rerenderTree(state);
 }
 
@@ -56,10 +63,10 @@ export let addNewPost = () => {
     rerenderTree(state);
 }
 
-export let sendMessage = (message) => {
+export let sendMessage = () => {
     let newMessage = {
         id: 7,
-        message: message,
+        message: state.messagesPage.newMessageData,
         senderClass: 'mainSender'
     };
     state.messagesPage.messagesData.push(newMessage);
