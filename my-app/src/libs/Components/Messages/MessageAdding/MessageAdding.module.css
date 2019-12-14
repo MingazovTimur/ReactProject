@@ -1,0 +1,36 @@
+.messageAdding{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-areas: 
+    'area btn'
+    ;
+
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 50px;
+    row-gap: 5px;
+    justify-content: center;
+
+    padding-top: 20px;
+    margin-right: 10px;
+    border-top: 1px solid grey;
+    
+}
+
+
+
+.messageAdding textarea{
+    grid-area: area;
+    max-width: 550px;
+    max-height: 50px;
+    border-radius: 10px;
+   
+}
+
+.messageAdding button{
+    background-color: rgba(138, 194, 150, .8);
+    grid-area: btn;
+    margin-right: 30px;
+    justify-self: end;
+    border-radius: 20px;
+    font-size: 20px;
+}

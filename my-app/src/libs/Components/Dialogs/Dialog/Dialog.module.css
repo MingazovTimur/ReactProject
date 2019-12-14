@@ -1,0 +1,26 @@
+.dialog{
+    margin-top: 35px;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+}
+
+.dialog div{
+    padding-right: 15px;
+}
+
+.dialogInner{
+    color: gray;
+    text-decoration: none;
+    max-width: 63%;
+}
+
+.dialog :hover{
+    color: black;
+    transition: all 0.2s ease;
+
+}
+
+.active {
+    color: goldenrod;
+}
