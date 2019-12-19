@@ -5,7 +5,7 @@ const UserIcon = (props) => {
     return (
         <div className={style.userIcon}>
             <img src={props.userIconSrc} alt='img' />
-            Юзер
+            {props.userIconName}
         </div>
     );
 }

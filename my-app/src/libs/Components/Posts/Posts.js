@@ -10,15 +10,16 @@ const Posts = (props) => {
         p => <Post 
         fill={p.fill}  
         likes={p.likes} 
-        userIconSrc={props.userIconSrc}/>)
+        userIconSrc={props.userIconSrc}
+        userIconName={props.userIconName} />)
 
     return (
         <div className={style.posts}>
             <PostAdding 
+                userIconName={props.userIconName}
                 newPostData={props.newPostData}
-                changeNewPostData={props.changeNewPostData}
-                userIconSrc={props.userIconSrc} 
-                addPost={props.addPost} />
+                dispatch={props.dispatch}
+                userIconSrc={props.userIconSrc}  />
             {postsElement}
         </div>
     );

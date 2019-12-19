@@ -17,7 +17,7 @@ const MessagesPage = (props) => {
                 changeNewMessageData={props.changeNewMessageData}
                 messagesData={props.messagesData}
                 newMessageData={props.newMessageData}
-                sendMessage={props.sendMessage} />
+                dispatch={props.dispatch} />
             </div>
         </BrowserRouter>
     );

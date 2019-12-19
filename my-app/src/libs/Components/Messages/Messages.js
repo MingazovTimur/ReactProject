@@ -24,7 +24,8 @@ const Messages = (props) => {
             <MessageAdding 
             sendMessage={props.sendMessage}
             changeNewMessageData={props.changeNewMessageData}
-            newMessageData={props.newMessageData} />
+            newMessageData={props.newMessageData}
+            dispatch={props.dispatch} />
             
         </div>
     );

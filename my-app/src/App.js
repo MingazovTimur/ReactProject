@@ -10,7 +10,8 @@ import MusicPage from './libs/Content/MusicPage/MusicPage';
 import SettingPage from './libs/Content/SettingPage/SettingPage';
 
 
-const App = (props) => {
+const App = 
+(props) => {
 
   return (
     <BrowserRouter>
@@ -20,20 +21,19 @@ const App = (props) => {
         <Nav />
         <div className='content-wrapper'>
           <Route path='/profile' render={() => <ProfilePage
+            userIconName={props.state.userIconName}
             newPostData={props.state.profilePage.newPostData}
-            changeNewPostData={props.changeNewPostData}
             postsData={props.state.profilePage.postsData}
             userIconSrc={props.state.userIconSrc}
             avaSrc={props.state.avaSrc}
-            addPost={props.addPost} />} />
+            dispatch={props.dispatch} />} />
 
           <Route path='/messages' render={() => <MessagesPage 
-            sendMessage={props.sendMessage}
             userIconSrc={props.state.userIconSrc}
             dialogsData={props.state.messagesPage.dialogsData}
             messagesData={props.state.messagesPage.messagesData}
             newMessageData={props.state.messagesPage.newMessageData}
-            changeNewMessageData={props.changeNewMessageData} />} />
+            dispatch={props.dispatch} />} />
 
           <Route path='/news' render={() => <NewsPage />} />
           <Route path='/music' render={() => <MusicPage />} />
