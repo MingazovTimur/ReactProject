@@ -7,10 +7,10 @@ import Dialog from './Dialog/Dialog';
 const Dialogs = (props) => {
 
 
-    let dialogsElements = props.dialogsData.map(d => <Dialog
+    let dialogsElements = props.state.dialogsData.map(d => <Dialog
             id={d.id}
-            user={d.user}
-            userIconSrc={props.userIconSrc} />)
+            userIconSrc={props.state.userIconSrc} 
+            user={d.user} />)
 
     return (
         

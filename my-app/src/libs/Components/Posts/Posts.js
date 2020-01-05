@@ -6,20 +6,20 @@ import PostAdding from './PostAdding/PostAdding.js';
 
 const Posts = (props) => {
 
-    let postsElement = props.postsData.map( 
+    let postsElement = props.state.postsData.map( 
         p => <Post 
         fill={p.fill}  
         likes={p.likes} 
-        userIconSrc={props.userIconSrc}
-        userIconName={props.userIconName} />)
+        userIconSrc={props.state.mainIconSrc}
+        userIconName={props.state.mainIconName} />)
 
     return (
         <div className={style.posts}>
             <PostAdding 
-                userIconName={props.userIconName}
-                newPostData={props.newPostData}
-                dispatch={props.dispatch}
-                userIconSrc={props.userIconSrc}  />
+                userIconSrc={props.state.mainIconSrc}
+                userIconName={props.state.mainIconName}
+                newPostData={props.state.newPostData}
+                dispatch={props.dispatch} />
             {postsElement}
         </div>
     );

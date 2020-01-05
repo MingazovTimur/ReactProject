@@ -21,18 +21,11 @@ const App =
         <Nav />
         <div className='content-wrapper'>
           <Route path='/profile' render={() => <ProfilePage
-            userIconName={props.state.userIconName}
-            newPostData={props.state.profilePage.newPostData}
-            postsData={props.state.profilePage.postsData}
-            userIconSrc={props.state.userIconSrc}
-            avaSrc={props.state.avaSrc}
+            state={props.state.profilePage}
             dispatch={props.dispatch} />} />
 
           <Route path='/messages' render={() => <MessagesPage 
-            userIconSrc={props.state.userIconSrc}
-            dialogsData={props.state.messagesPage.dialogsData}
-            messagesData={props.state.messagesPage.messagesData}
-            newMessageData={props.state.messagesPage.newMessageData}
+            state={props.state.messagesPage}
             dispatch={props.dispatch} />} />
 
           <Route path='/news' render={() => <NewsPage />} />

@@ -6,7 +6,7 @@ import style from './Message.module.css';
 const Message = (props) => {
 
     let sender;
-    if(props.senderClass == "mainSender") {
+    if(props.senderClass === "mainSender") {
         sender=style.mainSender
     }else{
         sender=style.otherSender

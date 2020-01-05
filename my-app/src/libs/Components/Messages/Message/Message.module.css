@@ -9,13 +9,14 @@
 }
 
 .mainSender{
-    justify-self: start;
-    background-color: rgba(255, 255, 255, .8);
-
+    justify-self: end;
+    background-color: rgba(138, 194, 150, .8);
+    
 }
 
 .otherSender{
-    justify-self: end;
-    background-color: rgba(138, 194, 150, .8);
+    justify-self: start;
+    background-color: rgba(255, 255, 255, .8);
+
     
 }

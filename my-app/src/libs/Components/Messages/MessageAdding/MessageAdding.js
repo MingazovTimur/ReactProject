@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './MessageAdding.module.css';
-import { SendMessageActionCreator, ChangeNewMessageDataActionCreator } from '../../../../Redux/state';
+import { SendMessageActionCreator, ChangeNewMessageDataActionCreator } from '../../../../redux/messages-reducer';
 
 
 const MessageAdding = (props) => {
@@ -19,8 +19,9 @@ const MessageAdding = (props) => {
     return (
         <div className={style.messageAdding}>
             <textarea 
-            ref={newMessageElement} 
             value={props.newMessageData}
+            ref={newMessageElement} 
+            placeholder="Введите сообщение..."
             onChange={onChangeMessage} />
 
             <button onClick={addMessage}>Send-></button>

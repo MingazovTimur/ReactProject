@@ -6,12 +6,12 @@ import UserIcon from '../UserIcon/UserIcon';
 const Posts = (props) => {
     return (
         <div className={style.friendList}>
-            <UserIcon userIconSrc={props.userIconSrc} userIconName={props.userIconName} /> 
-            <UserIcon userIconSrc={props.userIconSrc} userIconName={props.userIconName} />
-            <UserIcon userIconSrc={props.userIconSrc} userIconName={props.userIconName} />
-            <UserIcon userIconSrc={props.userIconSrc} userIconName={props.userIconName} />
-            <UserIcon userIconSrc={props.userIconSrc} userIconName={props.userIconName} />
-            <UserIcon userIconSrc={props.userIconSrc} userIconName={props.userIconName} />
+            <UserIcon userIconSrc={props.state.userIconSrc} userIconName={props.state.userIconName} /> 
+            <UserIcon userIconSrc={props.state.userIconSrc} userIconName={props.state.userIconName} />
+            <UserIcon userIconSrc={props.state.userIconSrc} userIconName={props.state.userIconName} />
+            <UserIcon userIconSrc={props.state.userIconSrc} userIconName={props.state.userIconName} />
+            <UserIcon userIconSrc={props.state.userIconSrc} userIconName={props.state.userIconName} />
+            <UserIcon userIconSrc={props.state.userIconSrc} userIconName={props.state.userIconName} />
         </div>
     );
 }

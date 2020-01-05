@@ -10,13 +10,10 @@ const MessagesPage = (props) => {
     return (
         <BrowserRouter>
             <div className={style.messagesPage}>
-                <Dialogs  
-                dialogsData={props.dialogsData} 
-                userIconSrc={props.userIconSrc} />
+                <Dialogs 
+                state={props.state} />
                 <Messages 
-                changeNewMessageData={props.changeNewMessageData}
-                messagesData={props.messagesData}
-                newMessageData={props.newMessageData}
+                state={props.state}
                 dispatch={props.dispatch} />
             </div>
         </BrowserRouter>

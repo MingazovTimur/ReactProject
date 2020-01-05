@@ -8,7 +8,7 @@ import MessageAdding from './MessageAdding/MessageAdding';
 const Messages = (props) => {
     
     let messagesElements = 
-        props.messagesData.map( m =>  <Message 
+        props.state.messagesData.map( m =>  <Message 
             message={m.message}
             senderClass={m.senderClass} />)
     
@@ -22,9 +22,7 @@ const Messages = (props) => {
             {messagesElements}
 
             <MessageAdding 
-            sendMessage={props.sendMessage}
-            changeNewMessageData={props.changeNewMessageData}
-            newMessageData={props.newMessageData}
+            newMessageData={props.state.newMessageData}
             dispatch={props.dispatch} />
             
         </div>

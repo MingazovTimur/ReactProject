@@ -1,5 +1,5 @@
 import * as serviceWorker from './serviceWorker';
-import store from './Redux/state'
+import store from './redux/redux-store.js'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
@@ -8,15 +8,21 @@ import App from './App';
 
 
 let rerenderTree = (state) => {
+    debugger
     ReactDOM.render(<App 
         state={state} 
-        dispatch={store.dispatch.bind(store)} />, 
+        dispatch={store.dispatch.bind(store)}
+         />, 
     document.getElementById('root'));
 }
 
 rerenderTree(store.getState());
 
-store.Subscribe(rerenderTree);
+
+store.subscribe(() => {
+    let state = store.getState();
+    rerenderTree(state);
+});
 
 
 

@@ -1,7 +1,7 @@
 import UserIcon from '../../UserIcon/UserIcon.js';
 import React from 'react';
 import style from './PostAdding.module.css';
-import { AddPostActionCreator, ChangeNewPostDataActionCreator } from '../../../../Redux/state.js';
+import { AddPostActionCreator, ChangeNewPostDataActionCreator } from '../../../../redux/profile-reducer';
 
 
 const PostAdding = (props) => {
@@ -25,8 +25,9 @@ const PostAdding = (props) => {
             userIconSrc={props.userIconSrc}
             userIconName={props.userIconName} />
             <textarea 
-                ref={newPostElement}
                 value={props.newPostData}
+                ref={newPostElement}
+                placeholder='Здесь можно создать свой пост'
                 onChange={onChangePost}/>
                
             <button onClick={addPost}>Done</button>

@@ -13,16 +13,12 @@ const ProfilePage = (props) => {
     return (
         <div className={style.profilePage}>
             <Ava 
-            avaSrc={props.avaSrc} /> 
+            avaSrc={props.state.avaSrc} /> 
             <Profile />
             <FriendList 
-            userIconSrc={props.userIconSrc}
-            userIconName={props.userIconName} /> 
+            state={props.state} /> 
             <Posts 
-            userIconName={props.userIconName}
-            newPostData={props.newPostData}
-            postsData={props.postsData} 
-            userIconSrc={props.userIconSrc}
+            state={props.state}
             dispatch={props.dispatch} />
         </div>
     );
